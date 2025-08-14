@@ -315,3 +315,36 @@ html, body {
         display: none; /* hide nav links on small screens for simplicity */
     }
 }
+
+/* Hero sphere and handshake animation */
+.hero-right {
+    position: relative;
+}
+.hero-sphere {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+}
+.hero-sphere .person {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    fill: rgba(255, 255, 255, 0.8);
+    transition: transform 1s ease;
+}
+.hero-sphere .person-korean {
+    transform: translate(-150px, 60px);
+}
+.hero-sphere .person-uzbek {
+    transform: translate(70px, 60px);
+}
+.hero-sphere.handshake .person-korean {
+    transform: translate(-40px, 60px);
+}
+.hero-sphere.handshake .person-uzbek {
+    transform: translate(-40px, 60px);
+}
